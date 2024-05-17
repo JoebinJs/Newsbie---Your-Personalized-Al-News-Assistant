@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('news.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px; /* Maximum width for better readability */
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Added a background color with transparency for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    width: 100%; /* Full width of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    width: 80%; /* 80% width for better alignment */
+    max-width: 300px; /* Max width to prevent overly large input */
+}
+
+.articles {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.article {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for articles */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black; /* Black text color for better readability */
+    width: 100%; /* Full width of the container */
+}
+
+.article h2 {
+    margin-top: 0;
+}
+
+.article p {
+    margin: 10px 0;
+}
+
+.article a {
+    text-decoration: none;
+    color: #333;
+}

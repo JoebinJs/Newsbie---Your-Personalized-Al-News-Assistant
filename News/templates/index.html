@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igniters Newsbie App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Igniters Newsbie App</h1>
+        <form method="POST">
+            <label for="topic">Enter your preferred news topic:</label>
+            <input type="text" id="topic" name="topic">
+            <button type="submit">Get News</button>
+        </form>
+        <div class="articles">
+            {% if articles %}
+                {% for article in articles %}
+                    <div class="article">
+                        <h2>{{ article.title }}</h2>
+                        <p>{{ article.description }}</p>
+                        <a href="{{ article.url }}" target="_blank">Read more</a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No articles found for the specified topic.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
